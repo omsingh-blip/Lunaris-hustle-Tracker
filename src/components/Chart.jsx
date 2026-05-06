@@ -36,7 +36,7 @@ export default function ChartComponent() {
     <div className="w-full">
 
       <h2 className="text-5xl libre-font mb-10">
-        Night Activity
+        Progress Pillars
       </h2>
 
       <div className="w-full h-[420px]">
