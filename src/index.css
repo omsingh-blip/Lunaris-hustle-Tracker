@@ -5,3 +5,59 @@
 .libre-font {
   font-family: "Libre Baskerville", serif;
 }
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}
+
+.recharts-bar-rectangle path {
+  filter: drop-shadow(0px 0px 10px rgba(255,255,255,0.6));
+}
+
+@keyframes glowSlide {
+  0% {
+    transform: translateX(-120%);
+    opacity: 0;
+  }
+
+  20% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateX(320%);
+    opacity: 0;
+  }
+}
+
+@keyframes spinGlow {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-glowSlide {
+  animation: glowSlide 3s ease-in-out infinite;
+}
