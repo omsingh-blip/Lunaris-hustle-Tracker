@@ -159,6 +159,22 @@ Instead of aggressive productivity design, Lunaris focuses on a peaceful and imm
 * ☁️ Backend + authentication
 
 ---
+
+# 📸 Screenshots
+
+Store screenshots inside:
+
+````bash
+screenshots/
+ ├── home.png
+ ├── dashboard.png
+ └── progressPillars.png
+```bash
+public/
+ └── screenshots/
+      ├── home.png
+      ├── dashboard.png
+      └── progressPillars.png
 ````
 
 ## 🌌 Home Experience
