@@ -1,5 +1,6 @@
 import { useStore } from "../store/useStore";
 import { calculateStreak } from "../utils/streak";
+import MoonProgress from "./MoonProgress";
 
 export default function Stats() {
   const logs = useStore((state) => state.logs);
@@ -19,32 +20,26 @@ export default function Stats() {
   const progress = Math.min((todayHours / dailyGoal) * 100, 100);
 
   return (
-    <div>
-      <h2>Total Hours: {total}</h2>
+    <div className="grid md:grid-cols-2 gap-10 items-center">
 
-      <h2>🔥 Streak: {streak} days</h2>
+      {/* Left */}
+      <div>
+        <h2 className="text-4xl libre-font mb-6">
+          Tonight's Progress
+        </h2>
 
-      <h3>
-        Today: {todayHours} / {dailyGoal} hrs
-      </h3>
-
-      <div
-        style={{
-          width: "300px",
-          height: "20px",
-          background: "#ddd",
-          borderRadius: "20px",
-          overflow: "hidden",
-        }}
-      >
-        <div
-          style={{
-            width: `${progress}%`,
-            height: "100%",
-            background: "black",
-          }}
-        />
+        <div className="space-y-4 text-zinc-300">
+          <p>🔥 Streak: {streak} days</p>
+          <p>⏱ Total Hours: {total}</p>
+          <p>
+            🌙 Today: {todayHours} / {dailyGoal} hrs
+          </p>
+        </div>
       </div>
+
+      {/* Right */}
+      <MoonProgress progress={progress} />
+
     </div>
   );
 }

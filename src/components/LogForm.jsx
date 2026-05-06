@@ -45,7 +45,7 @@ export default function LogForm() {
 
       <button
         type="submit"
-        className="bg-white text-black p-3 rounded-xl font-semibold"
+        className="bg-white text-black p-3 rounded-xl font-semibold libre-font"
       >
         Add Log
       </button>
