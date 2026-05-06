@@ -1,7 +1,6 @@
-
 # 🌙 Lunaris
 
-![Lunaris Home](/screenshots/home.png)
+![Lunaris Home](screenshots/home.png)
 
 > A cinematic night-themed productivity dashboard built with React.js.
 
@@ -86,7 +85,7 @@ src/
 
 ---
 
-#  Installation
+# 🚀 Installation
 
 ## 1. Clone the repository
 
@@ -160,24 +159,23 @@ Instead of aggressive productivity design, Lunaris focuses on a peaceful and imm
 * ☁️ Backend + authentication
 
 ---
-
-# 📸 Screenshots
+````
 
 ## 🌌 Home Experience
 
-![Home](/screenshots/home.png)
+![Home](screenshots/home.png)
 
 ---
 
 ## 🐺 Dashboard
 
-![Dashboard](/screenshots/dashboard.png)
+![Dashboard](screenshots/dashboard.png)
 
 ---
 
 ## 📊 Progress Pillars
 
-![Progress Pillars](/screenshots/progressPillars.png)
+![Progress Pillars](screenshots/progressPillars.png)
 
 ---
 
@@ -198,6 +196,6 @@ MIT License
 
 ---
 
-# Author
+# 🧠 Author
 
 Built by Om while building in public.
