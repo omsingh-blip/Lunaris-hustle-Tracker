@@ -3,15 +3,19 @@ import dayjs from "dayjs";
 export function calculateStreak(logs) {
   if (!logs.length) return 0;
 
-  // Remove duplicate days
+  // Remove duplicate dates
   const uniqueDays = [
     ...new Set(
-      logs.map((log) => dayjs(log.date).format("YYYY-MM-DD"))
+      logs.map((log) =>
+        dayjs(log.date).format("YYYY-MM-DD")
+      )
     ),
   ];
 
   // Sort newest → oldest
-  uniqueDays.sort((a, b) => dayjs(b).unix() - dayjs(a).unix());
+  uniqueDays.sort(
+    (a, b) => dayjs(b).unix() - dayjs(a).unix()
+  );
 
   let streak = 1;
 
