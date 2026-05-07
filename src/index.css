@@ -61,3 +61,17 @@
 .animate-glowSlide {
   animation: glowSlide 3s ease-in-out infinite;
 }
+
+@keyframes slowRotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-rotate-slow {
+  animation: slowRotate 20s linear infinite;
+}
