@@ -11,14 +11,12 @@ export default function Stats() {
 
   const dailyGoal = 8;
 
-  const today = new Date().toISOString().split("T")[0];
+ const today = new Date().toLocaleDateString("en-CA");
 
 const todayHours = logs
-  .filter((log) => {
-    return log.date === today;
-  })
+  .filter((log) => log.date === today)
   .reduce((sum, log) => sum + log.hours, 0);
-  
+
   const progress = Math.min((todayHours / dailyGoal) * 100, 100);
 
   return (

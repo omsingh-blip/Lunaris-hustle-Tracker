@@ -75,3 +75,26 @@
 .animate-rotate-slow {
   animation: slowRotate 20s linear infinite;
 }
+
+@keyframes starTwinkle {
+  0% {
+    opacity: 0.2;
+    transform: scale(1);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale(1.4);
+  }
+
+  100% {
+    opacity: 0.2;
+    transform: scale(1);
+  }
+}
+
+.animate-starTwinkle {
+  animation-name: starTwinkle;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}

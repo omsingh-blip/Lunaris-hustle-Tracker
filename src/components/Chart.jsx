@@ -39,9 +39,9 @@ export default function ChartComponent() {
         Progress Pillars
       </h2>
 
-      <div className="w-full h-[420px]">
+<div className="w-full min-w-0 h-[420px]">
 
-        <ResponsiveContainer width="100%" height="100%">
+     <ResponsiveContainer width="99%" height={420}>
 
           <BarChart
             data={chartData}
