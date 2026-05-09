@@ -1,217 +1,180 @@
 # 🌙 Lunaris
 
-![Lunaris Home](screenshots/home.png)
+![Home Preview](./screenshots/home.png)
 
-> A cinematic night-themed productivity dashboard built with React.js.
+> A cinematic night-themed productivity desktop experience built with React.js.
 
-Lunaris transforms productivity tracking into an immersive nightly experience.
+Lunaris transforms consistency tracking into an immersive visual journey using moon phases, constellation heatmaps, glowing analytics, and a wolf-inspired aesthetic.
 
-Built around the idea of consistency over motivation, Lunaris combines a calm night-sky aesthetic with interactive progress tracking, streak systems, moon-based visualization, and a wolf-themed task companion.
+Instead of feeling like a traditional productivity dashboard, Lunaris is designed to feel calm, atmospheric, and emotionally engaging — built for people who quietly show up every night and keep building.
 
 ---
 
 # ✨ Features
 
-## 🌕 Moon Progress System
+* 🌙 Dynamic Moon Phases
+* ⭐ Constellation Heatmap
+* 📊 Cinematic Productivity Analytics
+* 🐺 Wolf Companion Aesthetic
+* 📜 Night History Archive
+* 📸 Downloadable Weekly Moon Cards
+* ✨ Animated Night Sky
+* 🔥 Streak Tracking System
+* 🧭 Multi-page Desktop-style Navigation
+* 📝 Daily Logging & Task Management
 
-* Daily progress visualized as a glowing moon
-* Moon resets every new day
-* Moon texture + crater styling
+---
 
-## 🔥 Streak Tracking
+# 🖼 Screenshots
 
-* Tracks consecutive productive days
-* Encourages long-term consistency
+## 🏠 Home
 
-## 📊 Night Activity Analytics
+![Home](./screenshots/home.png)
 
-* Interactive glowing bar chart
-* Day-wise hour aggregation
-* Moon-inspired neon chart styling
+---
 
-## 🐺 Wolf Tasks
+## 📊 Analytics
 
-* Add nightly tasks
-* Click to complete tasks
-* Animated strike-through completion state
-* Persistent local storage support
+![Analytics](./screenshots/analytics.png)
 
-## 🌌 Cinematic UI
+---
 
-* Night-sky inspired interface
-* Floating wolf mascot
-* Glassmorphism cards
-* Ambient glow effects
-* Responsive dashboard layout
+## 📝 Tasks
+
+![Tasks](./screenshots/tasks.png)
+
+---
+
+## 🌕 Tonight's Progress
+
+![Tonight Progress](./screenshots/tonights.png)
+
+---
+
+## 📜 History Archive
+
+![History](./screenshots/history.png)
+
+---
+
+## 📸 Weekly Moon Card
+
+![Weekly Card](./screenshots/weeklyCard.png)
 
 ---
 
 # 🛠 Tech Stack
 
+## Frontend
+
 * React.js
 * Vite
 * Tailwind CSS
+* React Router DOM
 * Zustand
 * Recharts
 * Day.js
+* html2canvas
+
+---
+
+# 🌌 Core Systems
+
+## 🌙 Dynamic Moon System
+
+The moon evolves dynamically based on daily productivity progress.
+
+* 🌑 New Moon
+* 🌒 Crescent Moon
+* 🌓 Half Moon
+* 🌔 Gibbous Moon
+* 🌕 Full Moon
+
+The more productive the night, the brighter the moon becomes.
+
+---
+
+## ⭐ Constellation Heatmap
+
+Every productive night becomes a glowing star.
+
+More productive days create brighter constellations, visually representing consistency over time.
+
+---
+
+## 📊 Progress Pillars
+
+A cinematic analytics system built using Recharts with glowing productivity bars and moon-inspired visual styling.
+
+---
+
+## 📜 Night History
+
+Lunaris stores day-wise productivity logs and tasks, allowing users to revisit their journey like a personal night journal.
+
+---
+
+## 📸 Weekly Moon Cards
+
+Generate downloadable cinematic weekly summary cards to document progress visually.
 
 ---
 
 # 📂 Project Structure
 
-```bash
+```txt
 src/
  ├── assets/
- │    └── wolf.png
- │
  ├── components/
- │    ├── Chart.jsx
- │    ├── LogForm.jsx
- │    ├── MoonProgress.jsx
- │    ├── Stats.jsx
- │    ├── WolfMascot.jsx
- │    └── WolfTasks.jsx
- │
+ ├── pages/
  ├── store/
- │    └── useStore.js
- │
  ├── utils/
- │    └── streak.js
- │
- ├── App.jsx
- ├── main.jsx
- └── index.css
 ```
 
 ---
 
 # 🚀 Installation
 
-## 1. Clone the repository
-
 ```bash
-git clone YOUR_REPOSITORY_LINK
+# Clone repository
+ git clone <your-repo-url>
+
+# Move into project
+ cd lunaris
+
+# Install dependencies
+ npm install
+
+# Run development server
+ npm run dev
 ```
 
 ---
 
-## 2. Navigate into the project
+# 🌙 Philosophy
 
-```bash
-cd lunaris
-```
+Lunaris is built around one idea:
 
----
+> Consistency over motivation.
 
-## 3. Install dependencies
-
-```bash
-npm install
-```
+The goal was not to create another corporate productivity dashboard, but a calm and immersive environment that makes nightly discipline feel rewarding.
 
 ---
 
-## 4. Start development server
+# 🚀 Future Plans
 
-```bash
-npm run dev
-```
-
----
-
-# 📦 Dependencies
-
-Install these packages:
-
-```bash
-npm install zustand recharts dayjs
-```
-
-For Tailwind CSS:
-
-```bash
-npm install -D tailwindcss @tailwindcss/vite
-```
+* 🎵 Ambient focus music
+* 🖥 Full desktop app experience
+* ☁️ Cloud sync
+* 🏆 Achievement system
+* 🌌 Enhanced constellation interactions
+* 🐺 Advanced wolf companion interactions
+* 📅 Lunar calendar system
 
 ---
 
-# 🎨 Theme & Design Philosophy
+# 👨‍💻 Built By
 
-Lunaris is designed around:
+Built with late nights, consistency, and curiosity.
 
-* calm productivity
-* nighttime focus
-* cinematic atmosphere
-* emotional interaction
-* consistency visualization
-
-Instead of aggressive productivity design, Lunaris focuses on a peaceful and immersive experience.
-
----
-
-# 🐺 Current Features In Progress
-
-* ⭐ Constellation heatmap
-* ✨ Animated stars
-* 🌙 Dynamic moon phases
-* 📸 Shareable weekly cards
-* 🌐 Public profile dashboard
-* ☁️ Backend + authentication
-
----
-
-# 📸 Screenshots
-
-Store screenshots inside:
-
-````bash
-screenshots/
- ├── home.png
- ├── dashboard.png
- └── progressPillars.png
-```bash
-public/
- └── screenshots/
-      ├── home.png
-      ├── dashboard.png
-      └── progressPillars.png
-````
-
-## 🌌 Home Experience
-
-![Home](screenshots/home.png)
-
----
-
-## 🐺 Dashboard
-
-![Dashboard](screenshots/dashboard.png)
-
----
-
-## 📊 Progress Pillars
-
-![Progress Pillars](screenshots/progressPillars.png)
-
----
-
-# 🌙 Inspiration
-
-Inspired by:
-
-* cinematic night aesthetics
-* consistency tracking
-* calm productivity systems
-* immersive dashboard experiences
-
----
-
-# 📄 License
-
-MIT License
-
----
-
-# 🧠 Author
-
-Built by Om while building in public.
+If you liked the project, feel free to star the repository 🌙
