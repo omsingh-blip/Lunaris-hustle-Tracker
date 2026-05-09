@@ -52,26 +52,53 @@ export default function ConstellationMap() {
     <div>
 
       {/* Title */}
-      <div className="mb-10">
+      <div className="mb-6 md:mb-10">
 
-        <h2 className="text-5xl libre-font mb-4">
+        <h2
+          className="
+            text-3xl
+            sm:text-4xl
+            md:text-5xl
+            libre-font
+            mb-3
+            md:mb-4
+          "
+        >
           Constellation Map
         </h2>
 
-        <p className="text-zinc-400">
+        <p className="text-zinc-400 text-sm sm:text-base">
           Every productive night becomes a star.
         </p>
 
       </div>
 
       {/* Stars */}
-      <div className="grid grid-cols-6 md:grid-cols-10 gap-6">
+      <div
+        className="
+          grid
+          grid-cols-5
+          sm:grid-cols-6
+          md:grid-cols-8
+          lg:grid-cols-10
+          gap-4
+          sm:gap-5
+          md:gap-6
+          justify-items-center
+        "
+      >
 
         {days.map((day, index) => (
 
           <div
             key={index}
-            className="group relative flex items-center justify-center"
+            className="
+              group
+              relative
+              flex
+              items-center
+              justify-center
+            "
           >
 
             {/* Star */}
@@ -79,6 +106,8 @@ export default function ConstellationMap() {
               className={`
                 w-4
                 h-4
+                sm:w-5
+                sm:h-5
                 rounded-full
                 transition-all
                 duration-500
@@ -91,12 +120,15 @@ export default function ConstellationMap() {
               className="
                 absolute
                 bottom-8
+                left-1/2
+                -translate-x-1/2
                 opacity-0
                 group-hover:opacity-100
                 transition
                 pointer-events-none
                 bg-black/90
-                border border-white/10
+                border
+                border-white/10
                 text-white
                 text-xs
                 px-3
@@ -104,6 +136,7 @@ export default function ConstellationMap() {
                 rounded-xl
                 whitespace-nowrap
                 z-50
+                max-w-[180px]
               "
             >
               <p>{dayjs(day.date).format("DD MMM YYYY")}</p>

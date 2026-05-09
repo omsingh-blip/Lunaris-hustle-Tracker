@@ -33,25 +33,43 @@ export default function ChartComponent() {
   }));
 
   return (
-    <div className="w-full">
+    <div className="w-full min-w-0">
 
-      <h2 className="text-5xl libre-font mb-10">
+      {/* Heading */}
+      <h2
+        className="
+          text-3xl
+          sm:text-4xl
+          md:text-5xl
+          libre-font
+          mb-6
+          md:mb-10
+        "
+      >
         Progress Pillars
       </h2>
 
-<div className="w-full min-w-0 h-[420px]">
+      {/* Chart Wrapper */}
+      <div
+        className="
+          w-full
+          h-[280px]
+          sm:h-[360px]
+          md:h-[420px]
+        "
+      >
 
-     <ResponsiveContainer width="99%" height={420}>
+        <ResponsiveContainer width="100%" height="100%">
 
           <BarChart
             data={chartData}
             margin={{
-              top: 20,
-              right: 20,
-              left: -20,
-              bottom: 20,
+              top: 10,
+              right: 10,
+              left: -25,
+              bottom: 5,
             }}
-            barCategoryGap="40%"
+            barCategoryGap="25%"
           >
 
             {/* Glow + Gradient */}
@@ -101,6 +119,7 @@ export default function ChartComponent() {
               stroke="#a1a1aa"
               tickLine={false}
               axisLine={false}
+              tick={{ fontSize: 12 }}
             />
 
             {/* Y Axis */}
@@ -108,6 +127,7 @@ export default function ChartComponent() {
               stroke="#a1a1aa"
               tickLine={false}
               axisLine={false}
+              tick={{ fontSize: 12 }}
             />
 
             {/* Tooltip */}
@@ -127,8 +147,8 @@ export default function ChartComponent() {
             {/* Bars */}
             <Bar
               dataKey="hours"
-              radius={[30, 30, 0, 0]}
-              barSize={70}
+              radius={[20, 20, 0, 0]}
+              barSize={window.innerWidth < 640 ? 28 : 50}
               fill="url(#moonGlow)"
               filter="url(#glow)"
             />

@@ -2,19 +2,44 @@ import WolfMascot from "../components/WolfMascot";
 
 export default function Home() {
   return (
-    <div>
+    <div className="w-full">
 
       {/* Hero Section */}
-      <div className="grid md:grid-cols-2 gap-10 items-center">
+      <div
+        className="
+          grid
+          md:grid-cols-2
+          gap-14
+          items-center
+          min-h-[75vh]
+        "
+      >
 
         {/* Left */}
-        <div>
+        <div className="text-center md:text-left">
 
-          <p className="text-zinc-400 text-sm tracking-[0.3em] uppercase mb-4">
+          <p
+            className="
+              text-zinc-400
+              text-xs sm:text-sm
+              tracking-[0.25em]
+              uppercase
+              mb-4
+            "
+          >
             Night Productivity System
           </p>
 
-          <h1 className="text-7xl libre-font leading-tight">
+          <h1
+            className="
+              libre-font
+              leading-tight
+              text-4xl
+              sm:text-5xl
+              md:text-6xl
+              lg:text-7xl
+            "
+          >
             The Night
             <br />
             Remembers
@@ -22,27 +47,45 @@ export default function Home() {
             Consistency.
           </h1>
 
-          <p className="mt-6 text-zinc-400 max-w-xl text-lg leading-relaxed">
+          <p
+            className="
+              mt-6
+              text-zinc-400
+              max-w-xl
+              text-base
+              sm:text-lg
+              leading-relaxed
+              mx-auto
+              md:mx-0
+            "
+          >
             A cinematic desktop productivity experience
             designed for consistency, focus, and nightly discipline.
           </p>
 
           {/* Quote */}
-          <div className="mt-8 border-l border-white/10 pl-4">
-
-            <p className="italic text-zinc-300">
+          <div
+            className="
+              mt-8
+              border-l
+              border-white/10
+              pl-4
+              inline-block
+              text-left
+            "
+          >
+            <p className="italic text-zinc-300 text-sm sm:text-base">
               “The wolf showed up again tonight.”
             </p>
-
           </div>
-
         </div>
 
         {/* Right */}
-        <WolfMascot />
+        <div className="flex justify-center md:justify-end">
+          <WolfMascot />
+        </div>
 
       </div>
-
     </div>
   );
 }

@@ -98,3 +98,14 @@
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
 }
+
+html,
+body,
+#root {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}

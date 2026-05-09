@@ -12,8 +12,7 @@ import History from "./pages/History";
 function App() {
   return (
     <BrowserRouter>
-
-      <div className="min-h-screen relative overflow-hidden bg-black text-white">
+      <div className="min-h-screen relative bg-black text-white overflow-x-hidden">
 
         {/* Animated Stars */}
         <AnimatedStars />
@@ -24,14 +23,13 @@ function App() {
         <div className="absolute bottom-[-200px] right-[-100px] w-[500px] h-[500px] bg-zinc-700 rounded-full blur-3xl opacity-10" />
 
         {/* Main Content */}
-        <div className="relative z-10 max-w-7xl mx-auto p-8">
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 md:px-8 py-6">
 
           {/* Navbar */}
           <Navbar />
 
           {/* Pages */}
           <Routes>
-
             <Route path="/" element={<Home />} />
 
             <Route path="/tasks" element={<Tasks />} />
@@ -41,13 +39,9 @@ function App() {
             <Route path="/moon" element={<Moon />} />
 
             <Route path="/history" element={<History />} />
-
           </Routes>
-
         </div>
-
       </div>
-
     </BrowserRouter>
   );
 }
