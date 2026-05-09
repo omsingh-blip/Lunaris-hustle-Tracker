@@ -1,4 +1,4 @@
-import wolfVideo from "../assets/wolf.mp4";
+import wolfVideo from "/wolf.mp4";
 
 export default function WolfMascot() {
   return (
