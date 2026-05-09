@@ -133,7 +133,7 @@ src/
 
 ---
 
-# 🚀 Installation
+#  Installation
 
 ```bash
 # Clone repository
@@ -151,7 +151,7 @@ src/
 
 ---
 
-# 🌙 Philosophy
+#  Philosophy
 
 Lunaris is built around one idea:
 
@@ -161,7 +161,7 @@ The goal was not to create another corporate productivity dashboard, but a calm 
 
 ---
 
-# 🚀 Future Plans
+#  Future Plans
 
 * 🎵 Ambient focus music
 * 🖥 Full desktop app experience
@@ -173,7 +173,9 @@ The goal was not to create another corporate productivity dashboard, but a calm 
 
 ---
 
-# 👨‍💻 Built By
+#  Built By
+
+OM SINGH
 
 Built with late nights, consistency, and curiosity.
 
