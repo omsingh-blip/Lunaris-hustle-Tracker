@@ -53,7 +53,7 @@ function Navbar() {
                         <h1 className="text-zinc-200 text-xl tracking-[0.3em] uppercase flex items-center gap-2">
                             Lunaris
                             <img
-                                src="src/assets/whiteWolf.png"
+                                src="/whiteWolf.png"
                                 alt="Wolf Mascot"
                                 className="w-14 h-14 object-contain"
                             />
