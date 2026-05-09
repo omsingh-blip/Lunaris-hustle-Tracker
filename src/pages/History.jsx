@@ -149,7 +149,7 @@ export default function History() {
                         {/* Wolf */}
                         <div className="text-2xl">
                            <img
-                                src="src/assets/whiteWolf.png"
+                                src="/whiteWolf.png"
                                 alt="Wolf Mascot"
                                 className="w-10 h-10 object-contain"
                             />
